@@ -1,0 +1,45 @@
+.app {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #0069d9;
+}
+
+.message {
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.error {
+  padding: 30px;
+  color: #dc3545;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .toolbar {
+    flex-direction: column;
+  }
+}
