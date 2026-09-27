@@ -69,11 +69,13 @@ export default function App() {
           onChange={handleSearchChange}
         />
 
-        <Pagination
-          pageCount={totalPages}
-          currentPage={page}
-          onPageChange={handlePageChange}
-        />
+        {totalPages > 1 && (
+          <Pagination
+            pageCount={totalPages}
+            currentPage={page}
+            onPageChange={handlePageChange}
+          />
+        )}
 
         <button
           className={css.button}
